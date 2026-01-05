@@ -1,0 +1,36 @@
+---
+// src/layouts/Layout.astro
+
+// THIS LINE IS CRITICAL — it loads your Tailwind + custom styles
+import '../styles/global.css';
+
+// Optional: pass a custom title, fallback to default
+export interface Props {
+  title?: string;
+}
+
+const { title = 'Shitcoin Collective DAO 💩👑' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Page title -->
+    <title>{title}</title>
+    
+    <!-- Favicon (optional – add your own in /public/favicon.svg or .png) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Preload your global CSS (helps with performance) -->
+    <link rel="preload" href="/_astro/global.[hash].css" as="style" />
+  </head>
+
+  <body class="min-h-screen bg-black text-white antialiased">
+    <!-- All page content goes here -->
+    <slot />
+  </body>
+</html>

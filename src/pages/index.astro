@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Shitcoin Collective DAO 💩👑">
+  <main class="relative min-h-screen overflow-hidden bg-black text-white">
+    <!-- Chaotic Animated Background -->
+    <div class="fixed inset-0 -z-10">
+      <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-black"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_rgba(57,255,20,0.15),_transparent_50%),_radial-gradient(circle_at_80%_80%,_rgba(255,0,255,0.15),_transparent_50%),_radial-gradient(circle_at_40%_20%,_rgba(0,255,255,0.15),_transparent_50%)] animate-chaos"></div>
+    </div>
+
+    <!-- Hero -->
+    <section class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+      <h1 class="mb-8 text-6xl font-black tracking-tight md:text-8xl lg:text-9xl">
+        <span class="shimmer-text">Shitcoin</span><br />
+        <span class="block text-5xl md:text-7xl lg:text-8xl text-white font-black" 
+       style="text-shadow: 0 0 20px #FF00FF, 0 0 40px #39FF14;">Collective</span>        
+       <span class="block text-5xl md:text-7xl lg:text-8xl text-pink-400">DAO</span>
+
+      </h1>
+
+      <p class="mx-auto mb-12 max-w-3xl text-xl md:text-2xl text-slate-300">
+        Which shitcoins are worthy enough to be in our DAO Holdings.<br class="hidden md:block" />
+        Fair-launched on Pump.fun • Governed on Realms • Pure shitcoin chaos 💩🚀
+      </p>
+
+      <div class="flex flex-col gap-6 sm:flex-row">
+        <a
+          href="https://pump.fun"
+          target="_blank"
+          class="rounded-full bg-gradient-to-r from-primary to-cyan-500 px-12 py-6 text-2xl font-bold text-black shadow-2xl shadow-primary/50 transition hover:scale-110"
+        >
+          Buy $SHITCOL 🚀
+        </a>
+        <a
+          href="https://realms.today"
+          target="_blank"
+          class="rounded-full border-4 border-neutral px-12 py-6 text-2xl font-bold text-white transition hover:scale-110 hover:bg-neutral hover:text-black hover:shadow-2xl hover:shadow-neutral/60"
+        >
+          Join DAO 🗳️
+        </a>
+      </div>
+
+      <!-- Floating Logo -->
+      <div class="absolute top-8 left-8 animate-float md:top-16 md:left-16 z-10">
+  <img src="/logo.png" alt="Shitcoin Crown" class="h-32 w-32 drop-shadow-2xl md:h-48 md:w-48" />
+</div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="py-32 px-6 text-center">
+      <h2 class="mb-12 text-5xl md:text-6xl font-black shimmer-text">Why Join the Collective?</h2>
+      <p class="mx-auto max-w-4xl text-lg md:text-xl leading-relaxed text-slate-200">
+        We're not just another meme coin. We're the <span class="text-primary font-bold">collective</span> — a community-owned DAO where holders vote on treasury moves, airdrops, which shitcoins to hold, and token burns.<br /><br />
+        Transparent. Chaotic. Unstoppable.
+      </p>
+    </section>
+
+<!-- Tokenomics (Text-Only – No Image Needed) -->
+<section class="py-32 px-6 bg-black/60">
+  <h2 class="mb-16 text-center text-5xl md:text-6xl font-black shimmer-text">Tokenomics 🚽</h2>
+  <div class="max-w-4xl mx-auto">
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 text-xl md:text-2xl space-y-0">
+      <li class="bg-gradient-to-r from-primary/20 to-neutral/20 p-8 rounded-2xl border border-primary/50">
+        💰 <span class="font-bold">Total Supply:</span> 1B $SHITCOL
+      </li>
+      <li class="bg-gradient-to-r from-cyan-500/20 to-pink-500/20 p-8 rounded-2xl border border-cyan-500/50">
+        🔥 <span class="font-bold">Token burns:</span> DAO Controlled
+      </li>
+      <li class="bg-gradient-to-r from-neutral/20 to-gold/20 p-8 rounded-2xl border border-neutral/50">
+        🗳️ <span class="font-bold">Governance:</span> Realms DAO
+      </li>
+      <li class="bg-gradient-to-r from-pink-500/20 to-primary/20 p-8 rounded-2xl border border-pink-500/50">
+        👑 <span class="font-bold">Treasury:</span> DAO Controlled
+      </li>
+      <li class="col-span-1 md:col-span-2 text-center bg-gradient-to-r from-gold/30 to-primary/30 p-10 rounded-2xl border-4 border-dashed border-gold">
+        🎁 <span class="text-3xl font-black">Airdrops:</span> DAO Controlled
+      </li>
+    </ul>
+  </div>
+</section>
+    <!-- CTA Footer -->
+    <section class="py-24 text-center bg-gradient-to-t from-purple-900/30 to-black">
+      <h2 class="mb-12 text-5xl md:text-6xl font-black shimmer-text">Ready to join the Collective?</h2>
+      <div class="flex flex-col sm:flex-row gap-8 justify-center">
+        <a href="#" class="px-10 py-5 bg-gold text-black rounded-full text-2xl font-bold hover:bg-yellow-400 transition">DexScreener 📊</a>
+        <a href="#" class="px-10 py-5 bg-cyan-600 rounded-full text-2xl font-bold hover:bg-cyan-500 transition">Telegram 💬</a>
+        <a href="#" class="px-10 py-5 bg-black border-4 border-white rounded-full text-2xl font-bold hover:bg-gray-900 transition">X / Twitter 🐦</a>
+      </div>
+      <p class="mt-12 text-xl text-slate-400">Built by degens, for degens. 💩👑</p>
+    </section>
+  </main>
+</Layout>

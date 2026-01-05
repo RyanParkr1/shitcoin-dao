@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shitcoin Collective DAO – Chaotic Neon Chaos Theme 💩👑🚀 */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #39FF14,
+    #00FFFF,
+    #FF00FF,
+    #FF69B4,
+    #39FF14
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(8deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes chaos {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(15%, -10%) rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: translate(-10%, 15%) rotate(180deg) scale(0.9);
+  }
+  75% {
+    transform: translate(-15%, -15%) rotate(270deg) scale(1.2);
+  }
+}
+
+.animate-chaos {
+  animation: chaos 30s ease infinite;
+}
